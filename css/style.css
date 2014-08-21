@@ -1,0 +1,288 @@
+/* line 1, style.scss */
+.pln {
+  color: #ccc;
+}
+
+/* line 2, style.scss */
+pre.prettyprint {
+  background: #036;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* line 3, style.scss */
+pre.prettyprint code {
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 4, style.scss */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 5, style.scss */
+ol.linenums li {
+  list-style: decimal outside;
+  color: #999;
+}
+
+@media screen {
+  /* line 7, style.scss */
+  .str {
+    color: #9c9;
+  }
+
+  /* line 8, style.scss */
+  .kwd {
+    color: #c9c;
+  }
+
+  /* line 9, style.scss */
+  .com {
+    color: #999;
+  }
+
+  /* line 10, style.scss */
+  .atv {
+    color: #6cc;
+  }
+
+  /* line 11, style.scss */
+  .var {
+    color: #f2777a;
+  }
+
+  /* line 12, style.scss */
+  .typ, .fun {
+    color: #69c;
+  }
+
+  /* line 13, style.scss */
+  .lit, .atn {
+    color: #f99157;
+  }
+
+  /* line 14, style.scss */
+  .pun, .opn, .clo, .tag, .dec {
+    color: #ccc;
+  }
+}
+@media print, projection {
+  /* line 17, style.scss */
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  /* line 18, style.scss */
+  .typ {
+    color: #404;
+    font-weight: 700;
+  }
+
+  /* line 19, style.scss */
+  .lit {
+    color: #044;
+  }
+
+  /* line 20, style.scss */
+  .pun, .opn, .clo {
+    color: #440;
+  }
+
+  /* line 21, style.scss */
+  .atn {
+    color: #404;
+  }
+
+  /* line 22, style.scss */
+  .str, .atv {
+    color: #060;
+  }
+
+  /* line 23, style.scss */
+  .kwd, .tag {
+    color: #006;
+    font-weight: 700;
+  }
+}
+/* line 25, style.scss */
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* line 30, style.scss */
+#page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 34, style.scss */
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* line 37, style.scss */
+.bg-jumbotron {
+  background: #74B5F6;
+  min-height: 450px;
+}
+
+/* line 41, style.scss */
+.btn-parallaxx {
+  border: solid 1px #fff;
+  border-radius: 6px;
+  color: #fff;
+}
+/* line 45, style.scss */
+.btn-parallaxx:hover {
+  background: #fff;
+  color: #74B5F6;
+}
+@media (max-width: 767px) {
+  /* line 41, style.scss */
+  .btn-parallaxx {
+    width: 100%;
+  }
+}
+
+/* line 53, style.scss */
+.parallaxx_el {
+  position: relative;
+  -webkit-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* line 60, style.scss */
+h3 {
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  /* line 60, style.scss */
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 66, style.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 69, style.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 72, style.scss */
+.elements {
+  border: 1px solid #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+/* line 78, style.scss */
+.sections .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 450px;
+}
+
+/* line 84, style.scss */
+#header .parallaxx_el {
+  left: 40px;
+  opacity: 0;
+}
+/* line 87, style.scss */
+#header .parallaxx_el.plx-active {
+  left: 0;
+  opacity: 1;
+}
+
+/* line 95, style.scss */
+#first-section .section-wrapper {
+  background: #74F674;
+}
+/* line 98, style.scss */
+#first-section .parallaxx_el {
+  position: relative;
+  top: 50px;
+}
+/* line 101, style.scss */
+#first-section .parallaxx_el.plx-active {
+  top: 0px;
+}
+
+/* line 108, style.scss */
+#second-section .section-wrapper {
+  background: #B5F674;
+}
+/* line 111, style.scss */
+#second-section .parallaxx_el {
+  position: relative;
+  right: 50px;
+}
+/* line 114, style.scss */
+#second-section .parallaxx_el.plx-active {
+  right: 0px;
+}
+
+/* line 121, style.scss */
+#third-section .section-wrapper {
+  background: #DCA199;
+}
+/* line 124, style.scss */
+#third-section .parallaxx_el {
+  position: relative;
+  transform: scale(0);
+}
+/* line 127, style.scss */
+#third-section .parallaxx_el.plx-active {
+  transform: scale(1);
+}
+
+/* line 133, style.scss */
+#fourth-section {
+  background-color: #74F6B5;
+}
+/* line 135, style.scss */
+#fourth-section .parallaxx_el {
+  position: relative;
+  left: -1500px;
+}
+/* line 138, style.scss */
+#fourth-section .parallaxx_el.right-anim {
+  left: 1500px;
+}
+/* line 141, style.scss */
+#fourth-section .parallaxx_el.plx-active {
+  left: 0;
+}
+
+/* line 148, style.scss */
+#fifth-section {
+  background-color: #B5F674;
+}
+/* line 150, style.scss */
+#fifth-section .parallaxx_el {
+  position: relative;
+  left: -1500px;
+  opacity: 0;
+}
+/* line 155, style.scss */
+#fifth-section .parallaxx_el.plx-active {
+  left: 0;
+  opacity: 1;
+}
