@@ -87,8 +87,8 @@ $.fn.parallaxx = function(options)
 							}
 					}else{
 						if(opts.return){
-								var that = $(this).find(opts.el);	
-									self.return(that,opts);
+								var that = $(this).find(opts.el+'.'+opts.active);	
+								self.return(that,opts);
 						}
 					}
 				});
@@ -100,7 +100,7 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			animation : function (that,i,opts){
-				var delay = (that.data('delay')) ? parseInt(that.data('delay')): 200;
+				var delay = (that.data('delay')) ? parseInt(that.data('delay')): opts.delay;
 				that.delay(delay *i).queue(function(next) {
 							that.addClass(opts.active);
 							next();
@@ -113,7 +113,7 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			return : function (that,opts){
-				that.stop().removeClass(opts.active);
+				that.clearQueue().removeClass(opts.active);
 			}
 		},parallaxx.prototype);
 		//end of function wcGmp
@@ -124,6 +124,7 @@ $.fn.parallaxx = function(options)
 		el 			: '.parallaxx_el',
 		active 	: 'plx-active',
 		position: 0.6 ,// window * (int)position
+		delay	: 200 ,// default delay time.
 		return: true // return is specified or returned to the original animation to scroll up.
 	}	
 	//end of $.fn.parallaxx.defaults	
