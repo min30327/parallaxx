@@ -115,9 +115,13 @@ h3{
 	}
 	.parallaxx_el{
 		position:relative;
-		right:50px;
+		text-align: center;
+		height: 150px;
+		width: 150px;
+		padding-top:60px;
+		margin: 0 auto;
 		&.plx-active{
-			right:0px;
+			border-radius: 50%;
 		}
 	}
 }
