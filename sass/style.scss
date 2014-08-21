@@ -81,12 +81,17 @@ h3{
 	min-height: 450px;
 }
 #header{
+		h1{
+			letter-spacing: 20px;
+		}
 	.parallaxx_el{
 		left: 40px;
 		opacity: 0;
+
 		&.plx-active{
 			left: 0;
 			opacity: 1;
+			letter-spacing: 0;
 		}
 	}
 }
@@ -149,11 +154,11 @@ h3{
 	background-color:		#B5F674;
 	.parallaxx_el{
 		position:relative;
-		left: -1500px;
+		transform:rotate(180deg);
 		opacity:0;
 		
 		&.plx-active{
-			left: 0;
+			transform:rotate(0deg);
 			opacity:1;
 		}
 	}

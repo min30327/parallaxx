@@ -201,88 +201,93 @@ h3 {
 }
 
 /* line 84, style.scss */
+#header h1 {
+  letter-spacing: 20px;
+}
+/* line 87, style.scss */
 #header .parallaxx_el {
   left: 40px;
   opacity: 0;
 }
-/* line 87, style.scss */
+/* line 91, style.scss */
 #header .parallaxx_el.plx-active {
   left: 0;
   opacity: 1;
+  letter-spacing: 0;
 }
 
-/* line 95, style.scss */
+/* line 100, style.scss */
 #first-section .section-wrapper {
   background: #74F674;
 }
-/* line 98, style.scss */
+/* line 103, style.scss */
 #first-section .parallaxx_el {
   position: relative;
   top: 50px;
 }
-/* line 101, style.scss */
+/* line 106, style.scss */
 #first-section .parallaxx_el.plx-active {
   top: 0px;
 }
 
-/* line 108, style.scss */
+/* line 113, style.scss */
 #second-section .section-wrapper {
   background: #B5F674;
 }
-/* line 111, style.scss */
+/* line 116, style.scss */
 #second-section .parallaxx_el {
   position: relative;
   right: 50px;
 }
-/* line 114, style.scss */
+/* line 119, style.scss */
 #second-section .parallaxx_el.plx-active {
   right: 0px;
 }
 
-/* line 121, style.scss */
+/* line 126, style.scss */
 #third-section .section-wrapper {
   background: #DCA199;
 }
-/* line 124, style.scss */
+/* line 129, style.scss */
 #third-section .parallaxx_el {
   position: relative;
   transform: scale(0);
 }
-/* line 127, style.scss */
+/* line 132, style.scss */
 #third-section .parallaxx_el.plx-active {
   transform: scale(1);
 }
 
-/* line 133, style.scss */
+/* line 138, style.scss */
 #fourth-section {
   background-color: #74F6B5;
 }
-/* line 135, style.scss */
+/* line 140, style.scss */
 #fourth-section .parallaxx_el {
   position: relative;
   left: -1500px;
 }
-/* line 138, style.scss */
+/* line 143, style.scss */
 #fourth-section .parallaxx_el.right-anim {
   left: 1500px;
 }
-/* line 141, style.scss */
+/* line 146, style.scss */
 #fourth-section .parallaxx_el.plx-active {
   left: 0;
 }
 
-/* line 148, style.scss */
+/* line 153, style.scss */
 #fifth-section {
   background-color: #B5F674;
 }
-/* line 150, style.scss */
+/* line 155, style.scss */
 #fifth-section .parallaxx_el {
   position: relative;
-  left: -1500px;
+  transform: rotate(180deg);
   opacity: 0;
 }
-/* line 155, style.scss */
+/* line 160, style.scss */
 #fifth-section .parallaxx_el.plx-active {
-  left: 0;
+  transform: rotate(0deg);
   opacity: 1;
 }

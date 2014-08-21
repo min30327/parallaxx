@@ -170,8 +170,9 @@ $('.parallaxx').parallaxx({
 		el 		: '.parallaxx_el',
 		active 		: 'plx-active',
 		position	: 0.6 ,// window * (int)position
-		delay	: 200 ,// default delay time.
-		return		: true // return is specified or returned to the original animation to scroll up.
+		delay		: 200 ,// default delay time.
+		return		: true, // return is specified or returned to the original animation to scroll up.
+		reset 		: true // Scroll top will reset when zero.
 	}	);
 	</pre>
 </div>
@@ -185,7 +186,9 @@ $('.parallaxx').parallaxx({
 <script>
 	;(function($){
 		$(function(){
-			$('.parallaxx').parallaxx();
+			$('.parallaxx').parallaxx({
+				reset: false
+			});
 		})
 	})(jQuery);
 	prettyPrint();

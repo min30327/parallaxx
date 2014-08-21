@@ -76,10 +76,21 @@ $.fn.parallaxx = function(options)
 				var self = this;
 				var scrT = $(window).scrollTop(); 
 				var winH = $(window).height();
-
+				if(scrT < 1){
+						if(opts.reset){
+								var that = elem.find(opts.el);	
+								self.reset(that,opts);
+						}
+				}else{
+						if(opts.reset){
+								var that = elem.find(opts.el);	
+								self.unreset(that,opts);
+						}
+				}
 				elem.each(function(){
 					var off = $(this).offset();
-					var q = parseInt(winH * opts.position); 
+					var q = parseInt(winH * opts.position);
+
 					if(scrT + (q)  > off.top){
 						for(i = 0; i < $(this).find(opts.el).length; i ++ ){
 							var that = $(this).find(opts.el).eq(i);	
@@ -91,6 +102,7 @@ $.fn.parallaxx = function(options)
 								self.return(that,opts);
 						}
 					}
+
 				});
 			},
 			/**
@@ -102,7 +114,7 @@ $.fn.parallaxx = function(options)
 			animation : function (that,i,opts){
 				var delay = (that.data('delay')) ? parseInt(that.data('delay')): opts.delay;
 				that.delay(delay *i).queue(function(next) {
-							that.addClass(opts.active);
+							that.not('.plx-reset').addClass(opts.active);
 							next();
 					});
 			},
@@ -113,8 +125,31 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			return : function (that,opts){
-				that.clearQueue().removeClass(opts.active);
+				that.clearQueue()
+				.removeClass(opts.active);
+			},
+			/**
+			 * [return description]
+			 * @param  {[type]} self [description]
+			 * @param  {[type]} i    [description]
+			 * @return {[type]}      [description]
+			 */
+			reset : function (that,opts){
+				that.clearQueue()
+				.removeClass(opts.active)
+				.addClass('plx-reset');
+			},
+			/**
+			 * [return description]
+			 * @param  {[type]} self [description]
+			 * @param  {[type]} i    [description]
+			 * @return {[type]}      [description]
+			 */
+			unreset : function (that,opts){
+				that.clearQueue()
+				.removeClass('plx-reset');
 			}
+
 		},parallaxx.prototype);
 		//end of function wcGmp
 		
@@ -125,7 +160,8 @@ $.fn.parallaxx = function(options)
 		active 	: 'plx-active',
 		position: 0.6 ,// window * (int)position
 		delay	: 200 ,// default delay time.
-		return: true // return is specified or returned to the original animation to scroll up.
+		return: true, // return is specified or returned to the original animation to scroll up.
+		reset 	: true // Scroll top will reset when zero.
 	}	
 	//end of $.fn.parallaxx.defaults	
 })(jQuery);	
