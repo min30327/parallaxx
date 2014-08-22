@@ -125,7 +125,7 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			return : function (that,opts){
-				that.clearQueue()
+				that.stop(true,true)
 				.removeClass(opts.active);
 			},
 			/**
@@ -135,7 +135,7 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			reset : function (that,opts){
-				that.clearQueue()
+				that.stop(true,true)
 				.removeClass(opts.active)
 				.addClass('plx-reset');
 			},
@@ -146,7 +146,7 @@ $.fn.parallaxx = function(options)
 			 * @return {[type]}      [description]
 			 */
 			unreset : function (that,opts){
-				that.clearQueue()
+				that.stop(true,true)
 				.removeClass('plx-reset');
 			}
 
