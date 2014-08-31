@@ -97,9 +97,9 @@ $.fn.parallaxx = function(options)
 								self.animation(that,i,opts);
 							}
 					}else{
-						if(opts.return){
+						if(opts.returned){
 								var that = $(this).find(opts.el+'.'+opts.active);	
-								self.return(that,opts);
+								self.returned(that,opts);
 						}
 					}
 
@@ -124,7 +124,7 @@ $.fn.parallaxx = function(options)
 			 * @param  {[type]} i    [description]
 			 * @return {[type]}      [description]
 			 */
-			return : function (that,opts){
+			returned : function (that,opts){
 				that.stop(true,true)
 				.removeClass(opts.active);
 			},
@@ -160,7 +160,7 @@ $.fn.parallaxx = function(options)
 		active 	: 'plx-active',
 		position: 0.6 ,// window * (int)position
 		delay	: 200 ,// default delay time.
-		return: true, // return is specified or returned to the original animation to scroll up.
+		returned: true, // return is specified or returned to the original animation to scroll up.
 		reset 	: true // Scroll top will reset when zero.
 	}	
 	//end of $.fn.parallaxx.defaults	
