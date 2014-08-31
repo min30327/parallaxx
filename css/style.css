@@ -163,40 +163,51 @@ body {
   -o-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+@media print {
+  /* line 53, style.scss */
+  .parallaxx_el {
+    opacity: 1;
+    position: static;
+    transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+  }
+}
 
-/* line 60, style.scss */
+/* line 68, style.scss */
 h2 {
   margin-bottom: 40px;
 }
 @media (max-width: 991px) {
-  /* line 60, style.scss */
+  /* line 68, style.scss */
   h2 {
     margin-bottom: 20px;
   }
 }
 
-/* line 66, style.scss */
+/* line 74, style.scss */
 h3 {
   margin-bottom: 80px;
 }
 @media (max-width: 991px) {
-  /* line 66, style.scss */
+  /* line 74, style.scss */
   h3 {
     margin-bottom: 20px;
   }
 }
 
-/* line 72, style.scss */
+/* line 80, style.scss */
 .mr10 {
   margin-right: 10px;
 }
 
-/* line 75, style.scss */
+/* line 83, style.scss */
 .mb10 {
   margin-bottom: 10px;
 }
 
-/* line 78, style.scss */
+/* line 86, style.scss */
 .elements {
   border: 1px solid #fff;
   padding: 20px;
@@ -204,48 +215,48 @@ h3 {
   min-height: 150px;
 }
 
-/* line 84, style.scss */
+/* line 92, style.scss */
 .sections .container {
   padding-top: 40px;
   padding-bottom: 40px;
   min-height: 450px;
 }
 
-/* line 90, style.scss */
+/* line 98, style.scss */
 #header h1 {
   letter-spacing: 20px;
 }
-/* line 93, style.scss */
+/* line 101, style.scss */
 #header .parallaxx_el {
   left: 40px;
   opacity: 0;
 }
-/* line 97, style.scss */
+/* line 105, style.scss */
 #header .parallaxx_el.plx-active {
   left: 0;
   opacity: 1;
   letter-spacing: 0;
 }
 
-/* line 106, style.scss */
+/* line 114, style.scss */
 #first-section .section-wrapper {
   background: #74F674;
 }
-/* line 109, style.scss */
+/* line 117, style.scss */
 #first-section .parallaxx_el {
   position: relative;
   top: 50px;
 }
-/* line 112, style.scss */
+/* line 120, style.scss */
 #first-section .parallaxx_el.plx-active {
   top: 0px;
 }
 
-/* line 119, style.scss */
+/* line 127, style.scss */
 #second-section .section-wrapper {
   background: #B5F674;
 }
-/* line 122, style.scss */
+/* line 130, style.scss */
 #second-section .parallaxx_el {
   position: relative;
   text-align: center;
@@ -256,56 +267,56 @@ h3 {
   transform: scale(1.5);
   background: #fff;
 }
-/* line 131, style.scss */
+/* line 139, style.scss */
 #second-section .parallaxx_el.plx-active {
   border-radius: 50%;
   transform: scale(1);
   background: none;
 }
 
-/* line 140, style.scss */
+/* line 148, style.scss */
 #third-section .section-wrapper {
   background: #DCA199;
 }
-/* line 143, style.scss */
+/* line 151, style.scss */
 #third-section .parallaxx_el {
   position: relative;
   transform: scale(0);
 }
-/* line 146, style.scss */
+/* line 154, style.scss */
 #third-section .parallaxx_el.plx-active {
   transform: scale(1);
 }
 
-/* line 152, style.scss */
+/* line 160, style.scss */
 #fourth-section {
   background-color: #74F6B5;
 }
-/* line 154, style.scss */
+/* line 162, style.scss */
 #fourth-section .parallaxx_el {
   position: relative;
   left: -1500px;
 }
-/* line 157, style.scss */
+/* line 165, style.scss */
 #fourth-section .parallaxx_el.right-anim {
   left: 1500px;
 }
-/* line 160, style.scss */
+/* line 168, style.scss */
 #fourth-section .parallaxx_el.plx-active {
   left: 0;
 }
 
-/* line 167, style.scss */
+/* line 175, style.scss */
 #fifth-section {
   background-color: #B5F674;
 }
-/* line 169, style.scss */
+/* line 177, style.scss */
 #fifth-section .parallaxx_el {
   position: relative;
   transform: rotate(180deg);
   opacity: 0;
 }
-/* line 174, style.scss */
+/* line 182, style.scss */
 #fifth-section .parallaxx_el.plx-active {
   transform: rotate(0deg);
   opacity: 1;
